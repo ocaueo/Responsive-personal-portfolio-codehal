@@ -64,7 +64,7 @@
 
   #menu-icon {
     font-size: 3.6rem;
-    color: var(--text-color)
+    color: var(--text-color);
     cursor: pointer;
     display: none;
   }
@@ -107,6 +107,8 @@
     margin: 2rem 0 4rem;
   }
 
+/* ----------------------------------------------------- */
+
   .btn-box {
     position: relative;
     display: flex;
@@ -133,34 +135,20 @@
     padding-top: 9px;
     transition: .5s;
   }
-
-  .btn-box .btn:hover {
+  .btn-box .btn:nth-child(1):hover{
+    background-color: transparent;
     color: var(--main-color);
   }
-
-  .btn-box .btn:nth-child(2) {
-    background: transparent;
+  .btn-box .btn:nth-child(2){
+    background-color: transparent;
     color: var(--main-color);
   }
-
-  .btn-box .btn:nth-child(2):hover {
+  .btn-box .btn:nth-child(2):hover{
+    background-color: var(--main-color);
     color: var(--bg-color);
   }
 
-  .btn-box .btn:nth-child(2)::before {
-    background: var(--main-color);
-  }
-
-  .btn-box .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    z-index: -1;
-  }
+/* ------------------------------------------------- */
 
   .btn-box .btn:hover::before {
     width: 100%;
@@ -192,7 +180,8 @@
   }
 
  .home-sci a:hover {
-    color: var(--bg-color);
+    color: var(--text-color);
+    background-color: var(--main-color);
   }
 
   .home-sci a::before {
@@ -202,7 +191,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--main-color);
+    background: var(--bg-color);
     z-index: -1;
     transition: .5s;
     
@@ -210,5 +199,4 @@
 
   .home-sci a:hover::before {
     width: 100%;
-
   }
